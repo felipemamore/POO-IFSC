@@ -1,0 +1,12 @@
+1. Descreva, com as suas próprias palavras, o que é Classe.
+
+Classe é um tipo de dado que pode ser composta por outros dados(atributos) do seu tipo e comportamentos(métodos).
+
+2. Diferencie, com as suas próprias palavras, Classe de Objeto.
+A Classe é o tipo de dado que possui seus próprios dados e comportamentos, jáo objeto é uma instância dessa classe que carrega todos os comportamentos dela consigo.
+
+3. O que é instância de uma Classe?
+A instância é o objeto da classe que possui os comportamentos e atributos definidos pela classe.
+
+4. O que são atributos e por que, em Orientação a Objetos, devemos encapsulá-los?
+são os elementos estruturais da clase ou variáveis, eles fazem os objetos interagirem entre si.
