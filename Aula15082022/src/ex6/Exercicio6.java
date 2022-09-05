@@ -1,8 +1,5 @@
 package ex6;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Exercicio6 {
@@ -20,9 +17,10 @@ public class Exercicio6 {
 
         }
         
-
+//Não está funcionando esse for ;(
+    
         for (int i = 0; i < 3; i++) {
-            aux = salario[i];
+            aux = salario[0];
             
             if (aux>salario[i]) {
                 aux = salario[i];
@@ -31,15 +29,10 @@ public class Exercicio6 {
             System.out.printf("salario[%d]= %d\n", i, aux);
         }
 
-       /*  Arrays.sort(salario);
-        for (int salarios : salario)
-            System.out.println(salarios);
-        System.out.println();
+       
 
-        System.out.println("\n"); */
-
-        /*
-         * for (int i = 0; i < 3; i++) {
+        
+          for (int i = 0; i < 3; i++) {
             aux = salario[i];
             
             if (aux > salario[i]) {
@@ -48,10 +41,10 @@ public class Exercicio6 {
             }
             System.out.printf("salario[%d]= %d\n", i, aux);
         }
-         * 
-         * }
-         */
+          
+         }
+        
         
     }
 
-}
+
