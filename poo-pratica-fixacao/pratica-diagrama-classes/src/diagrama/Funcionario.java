@@ -6,10 +6,12 @@ public class Funcionario extends Pessoa{
 	private Integer nrRegistro;
 	private LocalDate dataContratacao;
 	
-	public Funcionario(String nome, LocalDate dataNasc, String email) {
+	public Funcionario(String nome, LocalDate dataNasc, String email, Integer nrRegistro, LocalDate dataContratacao) {
 		super.setNome(nome);
 		super.setDataNasc(dataNasc);
 		super.setEmail(email);
+		this.nrRegistro = nrRegistro;
+		this.dataContratacao = dataContratacao;
 	}
 	
 	

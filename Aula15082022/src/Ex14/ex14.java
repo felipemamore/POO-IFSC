@@ -1,4 +1,4 @@
-package Ex14;
+package ex14;
 
 import java.util.Scanner;
 
@@ -27,8 +27,8 @@ public class ex14 {
         } else if (media >= 4) {
             System.out.printf("Aluno em recuperaçao !!\nMedia final: %.2f", media);
         } else {
-            System.out.printf("Aluno reprovado!!\nMedia final: %.2f", media);
-        }
+            System.out.printf("Aluno reprovado!!\nMedia final: %.2f", media) ;
+    }
 
     }
 
