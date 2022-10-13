@@ -8,13 +8,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Cliente cliente = new Cliente ("Novo Cliente",LocalDate.of(1997, 8, 1), "novocliente@javinha.com", 000001, (double)50000);
-		Cliente cliente2 = new Cliente("Mais um novo cliente", LocalDate.of(1994, 5, 5), "MaisUmNoovoCliente@javinha.com", 0000002, (double)800000);
+		Cliente cliente = new Cliente ("Novo Cliente",LocalDate.of(1997, 8, 1), "novocliente@javinha.com", 000001, (double) 0.0);
+		Cliente cliente2 = new Cliente("Mais um novo cliente", LocalDate.of(1994, 5, 5), "MaisUmNoovoCliente@javinha.com", 0000002, (double)0.0);
 		Funcionario funcionario = new Funcionario("Novo funcionario", LocalDate.of(1997, 3, 8), "novofunc@javinha.com", 0000000001, LocalDate.of(2018, 12, 12));
 		Funcionario funcionario2 = new Funcionario("Mais um Novo funcionario", LocalDate.of(1990, 3, 8), "MaisUmNovofunc@javinha.com", 0000000002, LocalDate.of(2020, 01, 9) );
 		
 		ArrayList<Cliente> arrayCliente = new ArrayList<>();
 		ArrayList<Funcionario> arrayFuncionario = new ArrayList<>();
+		
+		
 		
 		
 		
@@ -40,9 +42,6 @@ public class Main {
 			System.out.println(cliente2.mostrarSaldo());
 			System.out.println("");
 			
-		
-		
-		
 			System.out.println(funcionario.getNome());
 			System.out.println(funcionario.getDataNasc());
 			System.out.println(funcionario.getEmail());
@@ -54,6 +53,31 @@ public class Main {
 			System.out.println(funcionario2.getEmail());
 			System.out.println(funcionario2.getNrRegistro());
 			System.out.println(funcionario2.getDataNasc());
+			
+			
+			
+			
+			Scanner s = new Scanner(System.in);
+			
+			System.out.println("Digite valor a depositar: ");
+			
+			cliente.depositar(Double.valueOf(s.nextLine()));
+			System.out.printf("Valor Depositado: %.2f\n",s);
+			System.out.printf("Saldo disponível: %.2f\n",cliente.mostrarSaldo());
+			
+			System.out.println("Digite valor a sacar: ");
+			
+			
+			System.out.printf("Valor sacado: %f\n",cliente.sacar((Double.valueOf(s.nextLine()))));
+			
+			System.out.printf("Novo saldo: %.2f",cliente.mostrarSaldo());
+			
+			
+			
+			
+			
+			
+			
 			
 			
 		

@@ -13,6 +13,7 @@ public class Cliente extends Pessoa{
 		super.setEmail(email);
 		this.nrConta = nrConta;
 		this.saldo = saldo;
+		
 	}
 	
 
@@ -23,6 +24,12 @@ public class Cliente extends Pessoa{
 	}
 	public void setNrConta(Integer nrConta) {
 		this.nrConta = nrConta;
+		
+	}
+	
+	public void depositar(Double valor) {
+		this.saldo += valor;
+		
 	}
 	
 	
@@ -42,13 +49,10 @@ public class Cliente extends Pessoa{
 		
 	}
 	
-	public Double depositar(Double valor) {
-		this.saldo += valor;
-		return saldo;
-	}
+	
 	
 	public Double mostrarSaldo() {
-		return saldo;
+		return this.saldo;
 		
 	}
 	
